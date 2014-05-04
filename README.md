@@ -49,7 +49,7 @@ The timer will fire every `delay` seconds, until canceled.
 ###Usage
 
 ```lua
-MyAddOn = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("MyAddOn", "Gemini:Timer-1.0")
+MyAddOn = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("MyAddOn", false, {}, "Gemini:Timer-1.0")
 
 function MyAddOn:OnEnable()
   self.timerCount = 0
@@ -88,7 +88,7 @@ The timer will fire once in `delay` seconds, unless canceled before.
 ###Usage
 
 ```lua
-MyAddOn = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("MyAddOn", "Gemini:Timer-1.0")
+MyAddOn = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("MyAddOn", false, {}, "Gemini:Timer-1.0")
 
 function MyAddOn:OnEnable()
   self:ScheduleTimer("TimerFeedback", 5)
