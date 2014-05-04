@@ -245,7 +245,7 @@ end
 -- @param delay Delay for the timer, in seconds.
 -- @param args Optional arguments to be passed to the callback function.
 -- @usage
--- MyAddon = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("TimerTest", "Gemini:Timer-1.0")
+-- MyAddon = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("TimerTest", false, {}, "Gemini:Timer-1.0")
 -- 
 -- function MyAddon:OnEnable()
 --   local strConfirm = ", really!"
@@ -275,7 +275,7 @@ end
 -- @param delay Delay for the timer, in seconds.
 -- @param args Optional arguments to be passed to the callback function.
 -- @usage
--- MyAddon = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("TimerTest", "Gemini:Timer-1.0")
+-- MyAddon = Apollo.GetPackage("Gemini:Addon-1.0").tPackage:NewAddon("TimerTest", false, {}, "Gemini:Timer-1.0")
 -- 
 -- function MyAddon:OnEnable()
 --   self.timerCount = 0
