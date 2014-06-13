@@ -333,7 +333,7 @@ function GeminiTimer:CancelTimer(handle, silent)
 			error(MAJOR..": CancelTimer(handle[, silent]): '"..tostring(handle).."' - no such timer registered")
 			return false
 		end
-		if not timer.callback then 
+		if not timer.func then 
 			error(MAJOR..": CancelTimer(handle[, silent]): '"..tostring(handle).."' - timer already cancelled or expired")
 			return false
 		end
