@@ -46,6 +46,11 @@ The timer will fire every `delay` seconds, until canceled.
 
 		An optional, unlimited amount of arguments to pass to the callback function.
 
+###Returns
+
+**id**
+		Id with which to identify this timer with (For CancelTimer)
+		
 ###Usage
 
 ```lua
@@ -84,7 +89,11 @@ The timer will fire once in `delay` seconds, unless canceled before.
 **...**
 
 		An optional, unlimited amount of arguments to pass to the callback function.
+###Returns
 
+**id**
+		Id with which to identify this timer with (For CancelTimer)
+		
 ###Usage
 
 ```lua
