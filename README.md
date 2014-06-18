@@ -49,6 +49,7 @@ The timer will fire every `delay` seconds, until canceled.
 ###Returns
 
 **id**
+
 		Id with which to identify this timer with (For CancelTimer)
 		
 ###Usage
@@ -92,6 +93,7 @@ The timer will fire once in `delay` seconds, unless canceled before.
 ###Returns
 
 **id**
+
 		Id with which to identify this timer with (For CancelTimer)
 		
 ###Usage
